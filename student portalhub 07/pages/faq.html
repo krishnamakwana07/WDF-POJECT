@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentHub - Frequently Asked Questions">
+    <title>FAQ - StudentHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Dismissible Notification Banner (Top of page) -->
+    <div id="helpdesk-banner" class="notification-banner is-visible" role="region" aria-label="Support announcement">
+        <div class="container banner-inner">
+            <div class="banner-content">
+                <span class="banner-icon" aria-hidden="true">&#128161;</span>
+                <p class="banner-text">
+                    <strong>Have an academic query?</strong> Browse through our dynamic knowledge base or connect with campus counselors.
+                </p>
+            </div>
+            <div class="banner-actions">
+                <button type="button" class="btn btn-sm btn-outline" style="color: #ffffff; border-color: rgba(255,255,255,0.4);" data-modal-target="#helpdesk-modal">
+                    Live Desk
+                </button>
+                <button type="button" class="banner-close-btn" aria-label="Dismiss banner" data-banner-dismiss>&times;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Site Header with Flexbox Navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon" aria-hidden="true">&#127891;</span>
+                <div class="brand-text">
+                    <h1>StudentHub</h1>
+                    <p>Student Academic Portal</p>
+                </div>
+            </a>
+
+            <!-- Mobile Navigation Toggle -->
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="assignment.html" class="nav-link">Assignments</a></li>
+                    <li><a href="attendance.html" class="nav-link">Attendance</a></li>
+                    <li><a href="result.html" class="nav-link">Results</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="profile.html" class="nav-link">Profile</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="admin.html" class="nav-link">Admin</a></li>
+                </ul>
+                <div class="nav-auth-buttons">
+                    <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                    <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+        <div class="container">
+
+            <section id="dynamic-faq-section" aria-labelledby="faq-heading">
+                <div class="section-title-wrap">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="badge badge-primary">Knowledge Base</span>
+                        <span class="data-source-pill" data-source-badge>⚡ Loading via Fetch API...</span>
+                    </div>
+                    <h2 id="faq-heading">Frequently Asked Questions</h2>
+                    <p class="section-desc">Find instant answers to common questions regarding course enrollments, attendance regulations, results, and account security.</p>
+                </div>
+
+                <!-- FAQ Search & Filter Controls -->
+                <div class="faq-filter-bar">
+                    <div class="faq-search-wrapper">
+                        <span class="faq-search-icon" aria-hidden="true">&#128269;</span>
+                        <input type="search" class="faq-search-input" placeholder="Search questions or keywords (e.g. registration, attendance, exam, password)..." aria-label="Search FAQs">
+                        <button type="button" class="faq-clear-search" aria-label="Clear search query">&times;</button>
+                    </div>
+                    <div class="faq-toolbar">
+                        <div class="faq-categories" role="group" aria-label="FAQ categories">
+                            <button type="button" class="faq-cat-btn is-active" data-category="all">All Topics</button>
+                            <button type="button" class="faq-cat-btn" data-category="courses">Courses</button>
+                            <button type="button" class="faq-cat-btn" data-category="attendance">Attendance</button>
+                            <button type="button" class="faq-cat-btn" data-category="exams">Exams &amp; Results</button>
+                            <button type="button" class="faq-cat-btn" data-category="assignments">Assignments</button>
+                            <button type="button" class="faq-cat-btn" data-category="account">Account &amp; Security</button>
+                            <button type="button" class="faq-cat-btn" data-category="general">General Support</button>
+                        </div>
+                        <div class="faq-actions-group">
+                            <span class="faq-count-badge">Showing questions...</span>
+                            <button type="button" class="btn btn-sm btn-outline" data-faq-action="expand-all">Expand All</button>
+                            <button type="button" class="btn btn-sm btn-outline" data-faq-action="collapse-all">Collapse All</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Accordion List (Populated via Fetch API from faqs.json) -->
+                <div class="faq-accordion-container" data-accordion="true" data-faq-accordion-target>
+                    <!-- Dynamically rendered FAQs from external JSON -->
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Site Footer with Flexbox -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="brand">
+                    <span class="brand-icon" style="filter: brightness(1.2);">&#127891;</span>
+                    <div class="brand-text">
+                        <h2 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0;">StudentHub</h2>
+                        <p style="color: #94a3b8; font-size: 0.75rem;">Student Academic Portal</p>
+                    </div>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p style="margin-bottom: 0;">&copy; 2026 StudentHub. All rights reserved.</p>
+                <div>
+                    <button type="button" class="btn btn-sm btn-outline" style="color: #cbd5e1; border-color: #475569;" data-banner-restore>
+                        &#128227; Show Helpdesk Banner
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Accessible Modal Popup: Quick Helpdesk Modal -->
+    <div id="helpdesk-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-helpdesk-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 id="modal-helpdesk-title" class="modal-title">
+                    <span aria-hidden="true">&#128172;</span> StudentHub Quick Helpdesk
+                </h3>
+                <button type="button" class="modal-close-btn" data-modal-close aria-label="Close dialog">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Need urgent assistance with course enrollment, grade recalculation, or account access? Select an option below or send an instant inquiry to the academic office.</p>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: var(--space-4);">
+                    <div style="padding: var(--space-3); background: var(--color-surface-hover); border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+                        <strong style="color: var(--color-text-main);">&#128222; Academic Helpline:</strong> +91 (079) 2630-1234 (Mon&ndash;Fri, 9:00 AM &ndash; 5:00 PM)
+                    </div>
+                    <div style="padding: var(--space-3); background: var(--color-surface-hover); border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+                        <strong style="color: var(--color-text-main);">&#9993; Email Desk:</strong> support@studenthub.edu.in
+                    </div>
+                    <div style="padding: var(--space-3); background: var(--color-surface-hover); border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+                        <strong style="color: var(--color-text-main);">&#127979; Physical Desk:</strong> Academic Block A, Room 104
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline btn-sm" data-modal-close>Close</button>
+                <a href="contact.html" class="btn btn-primary btn-sm">Open Full Contact Page &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/data-loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "faq-001",
+    "question": "How do I register for courses and departmental electives?",
+    "category": "courses",
+    "categoryName": "Courses & Electives",
+    "answer": "Visit the Courses page and browse through the departmental and open electives. Choose your desired subjects, review prerequisite coursework, and click 'Confirm Registration' prior to the semester add/drop deadline.",
+    "views": 2450,
+    "helpfulCount": 389,
+    "lastUpdated": "2026-08-01"
+  },
+  {
+    "id": "faq-002",
+    "question": "How can I check my attendance percentage and lecture records?",
+    "category": "attendance",
+    "categoryName": "Attendance",
+    "answer": "Go to the Attendance page from your student dashboard to inspect subject-wise lecture attendance percentages, attended vs. delivered counts, and real-time shortfall warnings. Any discrepancies should be reported to your course coordinator within 3 working days.",
+    "views": 3120,
+    "helpfulCount": 512,
+    "lastUpdated": "2026-07-28"
+  },
+  {
+    "id": "faq-003",
+    "question": "When are semester results and official scorecards published?",
+    "category": "exams",
+    "categoryName": "Exams & Results",
+    "answer": "Results are officially verified and published within two weeks following the conclusion of the examination period. You can check subject grades, SGPA, and download provisional PDF scorecards on the Results page.",
+    "views": 2980,
+    "helpfulCount": 420,
+    "lastUpdated": "2026-08-02"
+  },
+  {
+    "id": "faq-004",
+    "question": "What is the procedure to submit late assignment work?",
+    "category": "assignments",
+    "categoryName": "Assignments",
+    "answer": "All assignment submissions must be submitted digitally via the Assignments portal before 11:59 PM on the deadline date. For extenuating circumstances or medical illness, students must submit a formal exemption request with supporting proof to their faculty advisor.",
+    "views": 1840,
+    "helpfulCount": 265,
+    "lastUpdated": "2026-07-15"
+  },
+  {
+    "id": "faq-005",
+    "question": "How can I reset or recover my student portal password?",
+    "category": "account",
+    "categoryName": "Account & Security",
+    "answer": "Click on 'Forgot Password' on the Login page and enter your registered university email ID or Student Roll ID. A secure one-time password (OTP) verification link will be dispatched immediately to reset your account password.",
+    "views": 2150,
+    "helpfulCount": 340,
+    "lastUpdated": "2026-07-20"
+  },
+  {
+    "id": "faq-006",
+    "question": "What is the minimum attendance threshold required to appear for exams?",
+    "category": "attendance",
+    "categoryName": "Attendance",
+    "answer": "University academic regulations mandate a minimum of 75% aggregate attendance in both theory lectures and laboratory practical sessions. Students falling below 75% will be placed on the attendance shortfall notice list.",
+    "views": 3500,
+    "helpfulCount": 610,
+    "lastUpdated": "2026-08-05"
+  },
+  {
+    "id": "faq-007",
+    "question": "How can I apply for re-evaluation or photocopy of exam answer scripts?",
+    "category": "exams",
+    "categoryName": "Exams & Results",
+    "answer": "Students can apply for answer script verification within 7 working days of result declaration via the Examination portal tab. A nominal re-checking fee is payable online, and re-evaluated scorecards are issued within 10 days.",
+    "views": 1690,
+    "helpfulCount": 245,
+    "lastUpdated": "2026-07-30"
+  },
+  {
+    "id": "faq-008",
+    "question": "Where can I download the official syllabus and academic calendar?",
+    "category": "courses",
+    "categoryName": "Courses & Electives",
+    "answer": "The approved university academic calendar, syllabus books, and lecture plan guidelines can be downloaded directly in PDF format from the Courses section or the university website downloads archive.",
+    "views": 1920,
+    "helpfulCount": 310,
+    "lastUpdated": "2026-08-01"
+  },
+  {
+    "id": "faq-009",
+    "question": "How do I update my profile details, emergency contact, or address?",
+    "category": "account",
+    "categoryName": "Account & Security",
+    "answer": "Navigate to the Profile page, click 'Edit Profile', make the necessary modifications to your contact telephone or residential address, and submit. Certain critical changes such as legal name change require registrar office documentary verification.",
+    "views": 1430,
+    "helpfulCount": 198,
+    "lastUpdated": "2026-07-22"
+  },
+  {
+    "id": "faq-010",
+    "question": "What file formats and size limits are accepted for project uploads?",
+    "category": "assignments",
+    "categoryName": "Assignments",
+    "answer": "Accepted formats include PDF, ZIP, DOCX, and MP4 (for presentations). The maximum individual upload size is 25 MB. For larger software archives, students are advised to provide a public or private GitHub repository link.",
+    "views": 1580,
+    "helpfulCount": 230,
+    "lastUpdated": "2026-07-29"
+  },
+  {
+    "id": "faq-011",
+    "question": "How can I register for campus events, hackathons, and cultural fests?",
+    "category": "general",
+    "categoryName": "General Support",
+    "answer": "Head over to the Events page, filter by category (Technical, Cultural, Sports, Workshops), select your event, and click 'Register Free' or 'View Details' to reserve your seat or register your team.",
+    "views": 2740,
+    "helpfulCount": 445,
+    "lastUpdated": "2026-08-04"
+  },
+  {
+    "id": "faq-012",
+    "question": "Who can I contact for urgent technical issues or portal outages?",
+    "category": "general",
+    "categoryName": "General Support",
+    "answer": "You can reach out to the campus IT Helpdesk via the Contact page or email it-support@studenthub.edu.in. Support tickets submitted through the portal are typically resolved within 4 to 8 hours during working days.",
+    "views": 1320,
+    "helpfulCount": 180,
+    "lastUpdated": "2026-07-25"
+  }
+]
