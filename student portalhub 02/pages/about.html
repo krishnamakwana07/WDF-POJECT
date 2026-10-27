@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about StudentHub, our mission, what we offer, and meet our team.">
+    <title>About - StudentHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Site Header with Flexbox Navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon" aria-hidden="true">&#127891;</span>
+                <div class="brand-text">
+                    <h1>StudentHub</h1>
+                    <p>Student Academic Portal</p>
+                </div>
+            </a>
+
+            <!-- Mobile Navigation Toggle -->
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="assignment.html" class="nav-link">Assignments</a></li>
+                    <li><a href="attendance.html" class="nav-link">Attendance</a></li>
+                    <li><a href="result.html" class="nav-link">Results</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="profile.html" class="nav-link">Profile</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="admin.html" class="nav-link">Admin</a></li>
+                </ul>
+                <div class="nav-auth-buttons">
+                    <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                    <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+        <div class="container">
+
+            <!-- About Intro Hero -->
+            <section class="about-hero" aria-labelledby="about-intro-heading">
+                <span class="badge badge-primary" style="margin-bottom: 0.75rem;">Our Story</span>
+                <h2 id="about-intro-heading" style="font-size: var(--font-size-2xl);">About StudentHub</h2>
+                <p style="font-size: var(--font-size-md); max-width: 900px; color: var(--color-text-muted);">
+                    StudentHub is a comprehensive academic portal designed for college students. It brings together
+                    all essential academic tools into one easy-to-use platform. Students can view their courses,
+                    track assignments, monitor attendance, check results, and stay updated on campus events — all
+                    from a single place. StudentHub aims to simplify the academic experience and help students
+                    stay organized throughout their college journey.
+                </p>
+            </section>
+
+            <!-- Mission & Vision using CSS Grid -->
+            <section class="about-mission-grid" aria-labelledby="mission-heading">
+                <article class="mission-box">
+                    <span class="badge badge-primary" style="margin-bottom: 0.5rem;">Core Purpose</span>
+                    <h3 id="mission-heading">Our Mission</h3>
+                    <p>
+                        Our mission is to empower students by providing them with the digital tools they need to
+                        succeed academically. We believe that when students have easy access to their academic
+                        information, they can make better decisions, stay on top of their responsibilities, and
+                        focus on what truly matters — learning and growing.
+                    </p>
+                </article>
+
+                <article class="mission-box" style="border-left-color: var(--color-secondary);">
+                    <span class="badge badge-secondary" style="margin-bottom: 0.5rem;">Future Outlook</span>
+                    <h3>Our Vision</h3>
+                    <p>
+                        To create a seamless, accessible, and unified digital campus experience where every student,
+                        educator, and administrator can collaborate seamlessly. We strive to innovate education
+                        technology with mobile-first design, high accessibility, and data-driven insights.
+                    </p>
+                </article>
+            </section>
+
+            <!-- What We Offer using CSS Grid -->
+            <section style="margin-bottom: var(--space-12);" aria-labelledby="offer-heading">
+                <div class="section-title-wrap">
+                    <p class="section-subtitle">Comprehensive Services</p>
+                    <h2 id="offer-heading">What We Offer</h2>
+                    <p class="section-desc">Modular features tailored to support students from admissions through graduation.</p>
+                </div>
+
+                <div class="grid-responsive-cards">
+                    <div class="card">
+                        <div class="feature-icon-box" aria-hidden="true">&#128218;</div>
+                        <h3>Course Management</h3>
+                        <p>View enrolled courses, semester schedules, lecture venues, and faculty contact information at a glance.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="feature-icon-box" aria-hidden="true">&#9201;</div>
+                        <h3>Assignment Tracking</h3>
+                        <p>Keep track of submission deadlines, homework files, project rubrics, and professor evaluation remarks.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="feature-icon-box" aria-hidden="true">&#128200;</div>
+                        <h3>Attendance Monitoring</h3>
+                        <p>Real-time calculation of your attendance percentage per subject with automatic shortage warning alerts.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="feature-icon-box" aria-hidden="true">&#128220;</div>
+                        <h3>Result &amp; GPA Reports</h3>
+                        <p>Instant access to semester marks, SGPA breakdown, and downloadable official grade sheets.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="feature-icon-box" aria-hidden="true">&#127917;</div>
+                        <h3>Event Discovery</h3>
+                        <p>Stay informed about university fests, inter-college hackathons, guest seminars, and workshops.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="feature-icon-box" aria-hidden="true">&#128100;</div>
+                        <h3>Profile &amp; Credentials</h3>
+                        <p>Keep your profile, academic branch, roll number, and official emergency contacts synchronized.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Team using CSS Grid & Responsive Table -->
+            <section aria-labelledby="team-heading">
+                <div class="section-title-wrap">
+                    <p class="section-subtitle">Leadership &amp; Creators</p>
+                    <h2 id="team-heading">Our Team</h2>
+                    <p class="section-desc">Meet the passionate educators and developers building and maintaining StudentHub.</p>
+                </div>
+
+                <!-- Team Grid with Visual Cards -->
+                <div class="team-grid" style="margin-bottom: var(--space-6);">
+                    <div class="team-card">
+                        <div class="team-avatar" aria-hidden="true">&#128104;&#8205;&#127979;</div>
+                        <h3 class="team-name">Dr. Arvind Sharma</h3>
+                        <span class="badge badge-primary team-role">Project Lead</span>
+                        <p class="team-dept">Department of Computer Science</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar" aria-hidden="true">&#128105;&#8205;&#128187;</div>
+                        <h3 class="team-name">Priya Nair</h3>
+                        <span class="badge badge-info team-role">Frontend Developer</span>
+                        <p class="team-dept">Information Technology</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar" aria-hidden="true">&#128104;&#8205;&#128187;</div>
+                        <h3 class="team-name">Rohan Mehta</h3>
+                        <span class="badge badge-secondary team-role">Backend Developer</span>
+                        <p class="team-dept">Department of Computer Science</p>
+                    </div>
+                </div>
+
+                <!-- Semantic Accessible Table -->
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Role</th>
+                                <th scope="col">Department</th>
+                                <th scope="col">Office</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Dr. Arvind Sharma</strong></td>
+                                <td><span class="badge badge-primary">Project Lead</span></td>
+                                <td>Computer Science</td>
+                                <td>CS Block #301</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Priya Nair</strong></td>
+                                <td><span class="badge badge-info">Frontend Developer</span></td>
+                                <td>Information Technology</td>
+                                <td>IT Innovation Lab</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rohan Mehta</strong></td>
+                                <td><span class="badge badge-secondary">Backend Developer</span></td>
+                                <td>Computer Science</td>
+                                <td>CS Lab 2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Site Footer with Flexbox -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="brand">
+                    <span class="brand-icon" style="filter: brightness(1.2);">&#127891;</span>
+                    <div class="brand-text">
+                        <h2 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0;">StudentHub</h2>
+                        <p style="color: #94a3b8; font-size: 0.75rem;">Student Academic Portal</p>
+                    </div>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StudentHub. All rights reserved.</p>
+                <p>Designed with mobile-first CSS Grid &amp; Flexbox for accessibility and performance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

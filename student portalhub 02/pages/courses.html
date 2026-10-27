@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentHub Courses — Browse the courses available this semester.">
+    <title>Courses — StudentHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Site Header with Flexbox Navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon" aria-hidden="true">&#127891;</span>
+                <div class="brand-text">
+                    <h1>StudentHub</h1>
+                    <p>Student Academic Portal</p>
+                </div>
+            </a>
+
+            <!-- Mobile Navigation Toggle -->
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="courses.html" class="nav-link active">Courses</a></li>
+                    <li><a href="assignment.html" class="nav-link">Assignments</a></li>
+                    <li><a href="attendance.html" class="nav-link">Attendance</a></li>
+                    <li><a href="result.html" class="nav-link">Results</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="profile.html" class="nav-link">Profile</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="admin.html" class="nav-link">Admin</a></li>
+                </ul>
+                <div class="nav-auth-buttons">
+                    <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                    <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+        <div class="container">
+
+            <section class="section-title-wrap" aria-labelledby="courses-heading">
+                <span class="badge badge-primary" style="margin-bottom: 0.5rem;">Curriculum 2026</span>
+                <h2 id="courses-heading">Course Catalog</h2>
+                <p class="section-desc">Browse and review all courses offered for Semester 5 including syllabus and faculty coordinators.</p>
+            </section>
+
+            <!-- Course Metrics Cards using CSS Grid -->
+            <div class="grid-stats" style="margin-bottom: var(--space-6);">
+                <div class="stat-card" style="border-top: 4px solid var(--color-primary);">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Active Courses</span>
+                </div>
+                <div class="stat-card" style="border-top: 4px solid var(--color-secondary);">
+                    <span class="stat-number">21</span>
+                    <span class="stat-label">Total Credits</span>
+                </div>
+                <div class="stat-card" style="border-top: 4px solid var(--color-info);">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Faculties</span>
+                </div>
+                <div class="stat-card" style="border-top: 4px solid var(--color-success);">
+                    <span class="stat-number">Sem 5</span>
+                    <span class="stat-label">Current Term</span>
+                </div>
+            </div>
+
+            <!-- Responsive Table View inside CSS Scroll Container -->
+            <div class="card" style="margin-bottom: var(--space-8);">
+                <div class="card-header">
+                    <h3 style="margin-bottom: 0; font-size: var(--font-size-lg);">Semester Course List</h3>
+                    <span class="badge badge-info">Fall 2026</span>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive" style="margin-bottom: 0;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Course Name</th>
+                                    <th scope="col">Faculty</th>
+                                    <th scope="col">Credits</th>
+                                    <th scope="col">Semester</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="badge badge-primary">CS301</span></td>
+                                    <td><strong>Data Structures &amp; Algorithms</strong></td>
+                                    <td>Prof. Sharma</td>
+                                    <td>4 Credits</td>
+                                    <td>Sem 5</td>
+                                    <td><a href="assignment.html" class="btn btn-sm btn-outline">Assignments</a></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge badge-primary">CS302</span></td>
+                                    <td><strong>Web Development</strong></td>
+                                    <td>Prof. Iyer</td>
+                                    <td>3 Credits</td>
+                                    <td>Sem 5</td>
+                                    <td><a href="assignment.html" class="btn btn-sm btn-outline">Assignments</a></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge badge-primary">CS303</span></td>
+                                    <td><strong>Database Management</strong></td>
+                                    <td>Prof. Kulkarni</td>
+                                    <td>4 Credits</td>
+                                    <td>Sem 5</td>
+                                    <td><a href="assignment.html" class="btn btn-sm btn-outline">Assignments</a></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge badge-primary">CS304</span></td>
+                                    <td><strong>Operating Systems</strong></td>
+                                    <td>Prof. Reddy</td>
+                                    <td>4 Credits</td>
+                                    <td>Sem 5</td>
+                                    <td><a href="assignment.html" class="btn btn-sm btn-outline">Assignments</a></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge badge-primary">CS305</span></td>
+                                    <td><strong>Computer Networks</strong></td>
+                                    <td>Prof. Gupta</td>
+                                    <td>3 Credits</td>
+                                    <td>Sem 5</td>
+                                    <td><a href="assignment.html" class="btn btn-sm btn-outline">Assignments</a></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge badge-primary">CS306</span></td>
+                                    <td><strong>Software Engineering</strong></td>
+                                    <td>Prof. Nair</td>
+                                    <td>3 Credits</td>
+                                    <td>Sem 5</td>
+                                    <td><a href="assignment.html" class="btn btn-sm btn-outline">Assignments</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Site Footer with Flexbox -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="brand">
+                    <span class="brand-icon" style="filter: brightness(1.2);">&#127891;</span>
+                    <div class="brand-text">
+                        <h2 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0;">StudentHub</h2>
+                        <p style="color: #94a3b8; font-size: 0.75rem;">Student Academic Portal</p>
+                    </div>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StudentHub. All rights reserved.</p>
+                <p>Designed with mobile-first CSS Grid &amp; Flexbox for accessibility and performance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

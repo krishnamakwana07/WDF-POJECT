@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentHub Results — View your academic results, grades, and SGPA for Semester 5.">
+    <title>Results — StudentHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Site Header with Flexbox Navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon" aria-hidden="true">&#127891;</span>
+                <div class="brand-text">
+                    <h1>StudentHub</h1>
+                    <p>Student Academic Portal</p>
+                </div>
+            </a>
+
+            <!-- Mobile Navigation Toggle -->
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="assignment.html" class="nav-link">Assignments</a></li>
+                    <li><a href="attendance.html" class="nav-link">Attendance</a></li>
+                    <li><a href="result.html" class="nav-link active">Results</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="profile.html" class="nav-link">Profile</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="admin.html" class="nav-link">Admin</a></li>
+                </ul>
+                <div class="nav-auth-buttons">
+                    <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                    <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+        <div class="container">
+
+            <section class="section-title-wrap" aria-labelledby="results-heading">
+                <span class="badge badge-primary" style="margin-bottom: 0.5rem;">Grade Transcript</span>
+                <h2 id="results-heading">Academic Results &mdash; Semester 5</h2>
+                <p class="section-desc">Official grade distribution, credit points earned, SGPA, and cumulative performance.</p>
+            </section>
+
+            <!-- Results Summary Cards using CSS Grid -->
+            <div class="grid-stats" style="margin-bottom: var(--space-8);">
+                <div class="stat-card" style="border-top: 4px solid var(--color-primary);">
+                    <span class="stat-number">8.7</span>
+                    <span class="stat-label">Semester SGPA</span>
+                    <span class="badge badge-success" style="margin-top: 0.5rem;">Distinction</span>
+                </div>
+                <div class="stat-card" style="border-top: 4px solid var(--color-secondary);">
+                    <span class="stat-number">8.5</span>
+                    <span class="stat-label">Cumulative CGPA</span>
+                    <span class="badge badge-primary" style="margin-top: 0.5rem;">Rank: Top 10%</span>
+                </div>
+                <div class="stat-card" style="border-top: 4px solid var(--color-info);">
+                    <span class="stat-number">42</span>
+                    <span class="stat-label">Credits Earned</span>
+                    <span class="badge badge-info" style="margin-top: 0.5rem;">On Track</span>
+                </div>
+                <div class="stat-card" style="border-top: 4px solid var(--color-success);">
+                    <span class="stat-number">6 / 6</span>
+                    <span class="stat-label">Subjects Cleared</span>
+                    <span class="badge badge-success" style="margin-top: 0.5rem;">Zero Backlogs</span>
+                </div>
+            </div>
+
+            <!-- Subject-wise Results Table inside Card -->
+            <div class="card" style="margin-bottom: var(--space-8);">
+                <div class="card-header">
+                    <div>
+                        <h3 style="margin-bottom: 0; font-size: var(--font-size-lg);">Subject-wise Grade Card</h3>
+                        <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: 0;">Evaluation based on university 10-point scale.</p>
+                    </div>
+                    <button class="btn btn-sm btn-outline">&#128424; Print Grade Sheet</button>
+                </div>
+
+                <div class="card-body">
+                    <div class="table-responsive" style="margin-bottom: 0;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Course Name</th>
+                                    <th scope="col">Credits</th>
+                                    <th scope="col">Grade</th>
+                                    <th scope="col">Grade Points</th>
+                                    <th scope="col">Evaluation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="badge badge-primary">CS301</span></td>
+                                    <td><strong>Data Structures &amp; Algorithms</strong></td>
+                                    <td>4</td>
+                                    <td><span class="badge badge-success">A</span></td>
+                                    <td>9 / 10</td>
+                                    <td>Excellent</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge badge-primary">CS302</span></td>
+                                    <td><strong>Web Development</strong></td>
+                                    <td>3</td>
+                                    <td><span class="badge badge-success">A+</span></td>
+                                    <td>10 / 10</td>
+                                    <td>Outstanding</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge badge-primary">CS303</span></td>
+                                    <td><strong>Database Management</strong></td>
+                                    <td>4</td>
+                                    <td><span class="badge badge-success">A</span></td>
+                                    <td>9 / 10</td>
+                                    <td>Excellent</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge badge-primary">CS304</span></td>
+                                    <td><strong>Operating Systems</strong></td>
+                                    <td>4</td>
+                                    <td><span class="badge badge-info">B+</span></td>
+                                    <td>8 / 10</td>
+                                    <td>Very Good</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge badge-primary">CS305</span></td>
+                                    <td><strong>Computer Networks</strong></td>
+                                    <td>3</td>
+                                    <td><span class="badge badge-success">A</span></td>
+                                    <td>9 / 10</td>
+                                    <td>Excellent</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge badge-primary">CS306</span></td>
+                                    <td><strong>Software Engineering</strong></td>
+                                    <td>3</td>
+                                    <td><span class="badge badge-info">B+</span></td>
+                                    <td>8 / 10</td>
+                                    <td>Very Good</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr style="background-color: #f8fafc; font-weight: bold;">
+                                    <td colspan="4" style="text-align: right; padding-right: 1.5rem;">Semester SGPA:</td>
+                                    <td colspan="2"><span class="badge badge-primary" style="font-size: 0.95rem;">8.7 / 10</span></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Site Footer with Flexbox -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="brand">
+                    <span class="brand-icon" style="filter: brightness(1.2);">&#127891;</span>
+                    <div class="brand-text">
+                        <h2 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0;">StudentHub</h2>
+                        <p style="color: #94a3b8; font-size: 0.75rem;">Student Academic Portal</p>
+                    </div>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StudentHub. All rights reserved.</p>
+                <p>Designed with mobile-first CSS Grid &amp; Flexbox for accessibility and performance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentHub - Your one-stop student academic portal for managing courses, assignments, attendance, and more.">
+    <title>StudentHub - Student Academic Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Site Header with Flexbox Navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                <span class="brand-icon" aria-hidden="true">&#127891;</span>
+                <div class="brand-text">
+                    <h1>StudentHub</h1>
+                    <p>Student Academic Portal</p>
+                </div>
+            </a>
+
+            <!-- Mobile Navigation Toggle -->
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="pages/about.html" class="nav-link">About</a></li>
+                    <li><a href="pages/dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="pages/courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="pages/assignment.html" class="nav-link">Assignments</a></li>
+                    <li><a href="pages/attendance.html" class="nav-link">Attendance</a></li>
+                    <li><a href="pages/result.html" class="nav-link">Results</a></li>
+                    <li><a href="pages/events.html" class="nav-link">Events</a></li>
+                    <li><a href="pages/profile.html" class="nav-link">Profile</a></li>
+                    <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="pages/faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="pages/feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="pages/admin.html" class="nav-link">Admin</a></li>
+                </ul>
+                <div class="nav-auth-buttons">
+                    <a href="pages/login.html" class="btn btn-outline btn-sm">Login</a>
+                    <a href="pages/register.html" class="btn btn-primary btn-sm">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+        <div class="container">
+
+            <!-- Hero Section using Flexbox -->
+            <section class="hero-section" aria-labelledby="hero-heading">
+                <div class="hero-content">
+                    <span class="badge badge-primary hero-badge">Next-Gen Campus Portal</span>
+                    <h2 id="hero-heading" class="hero-title">Welcome to StudentHub</h2>
+                    <p class="hero-lead">Your all-in-one academic companion. Manage courses, track your progress, view results, and stay connected with your campus community effortlessly.</p>
+                    <div class="hero-actions">
+                        <a href="pages/register.html" class="btn btn-primary">Get Started - Create Account</a>
+                        <a href="pages/login.html" class="btn btn-outline">Already registered? Login</a>
+                    </div>
+                </div>
+                <div class="hero-preview-card">
+                    <div>
+                        <span class="badge badge-warning" style="margin-bottom: 0.75rem;">Live Semester 2026</span>
+                        <h3>Student Dashboard Overview</h3>
+                        <p>Real-time updates on assignments, grades, attendance benchmarks, and schedule alerts right at your fingertips.</p>
+                    </div>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span class="badge badge-info">Courses: Active</span>
+                        <span class="badge badge-success">Attendance: 92%</span>
+                        <span class="badge badge-primary">CGPA: 8.5</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Features using CSS Grid -->
+            <section style="margin-bottom: var(--space-12);" aria-labelledby="features-heading">
+                <div class="section-title-wrap">
+                    <p class="section-subtitle">Empowering Your Academics</p>
+                    <h2 id="features-heading">Key Features</h2>
+                    <p class="section-desc">Everything you need to excel in your degree program in one intuitive platform.</p>
+                </div>
+
+                <div class="grid-responsive-cards">
+                    <article class="feature-card">
+                        <div class="feature-icon-box" aria-hidden="true">&#128218;</div>
+                        <h3>Course Management</h3>
+                        <p>Browse and enroll in courses offered by the university with complete syllabus and faculty details.</p>
+                        <div class="card-footer">
+                            <a href="pages/courses.html" class="btn btn-sm btn-outline">Browse Courses &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon-box" aria-hidden="true">&#128221;</div>
+                        <h3>Assignment Tracker</h3>
+                        <p>Keep track of your academic deadlines, upload submissions, and never miss an upcoming due date.</p>
+                        <div class="card-footer">
+                            <a href="pages/assignment.html" class="btn btn-sm btn-outline">View Assignments &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon-box" aria-hidden="true">&#9989;</div>
+                        <h3>Attendance Monitor</h3>
+                        <p>View your real-time attendance percentage for each enrolled course and ensure mandatory eligibility.</p>
+                        <div class="card-footer">
+                            <a href="pages/attendance.html" class="btn btn-sm btn-outline">Check Attendance &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon-box" aria-hidden="true">&#127942;</div>
+                        <h3>Results &amp; Grades</h3>
+                        <p>Check semester-wise scorecards, track SGPA and cumulative CGPA trends, and download transcripts.</p>
+                        <div class="card-footer">
+                            <a href="pages/result.html" class="btn btn-sm btn-outline">View Grades &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon-box" aria-hidden="true">&#127881;</div>
+                        <h3>Campus Events</h3>
+                        <p>Discover upcoming tech fests, hackathons, sports tournaments, and professional guest seminars.</p>
+                        <div class="card-footer">
+                            <a href="pages/events.html" class="btn btn-sm btn-outline">Explore Events &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon-box" aria-hidden="true">&#128100;</div>
+                        <h3>Student Profile</h3>
+                        <p>Manage your personal profile, academic documents, contact info, and emergency contact details.</p>
+                        <div class="card-footer">
+                            <a href="pages/profile.html" class="btn btn-sm btn-outline">Edit Profile &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Quick Statistics using CSS Grid -->
+            <section style="margin-bottom: var(--space-12);" aria-labelledby="stats-heading">
+                <div class="section-title-wrap">
+                    <p class="section-subtitle">Portal Metrics</p>
+                    <h2 id="stats-heading">Quick Statistics</h2>
+                    <p class="section-desc">Key campus milestones and community figures across our university.</p>
+                </div>
+
+                <div class="grid-stats" style="margin-bottom: var(--space-6);">
+                    <div class="stat-card">
+                        <span class="stat-number">10,000+</span>
+                        <span class="stat-label">Active Students</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Courses Offered</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Expert Faculty</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfaction Rate</span>
+                    </div>
+                </div>
+
+                <!-- Semantic Data Table (Mobile Responsive) -->
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Metric</th>
+                                <th scope="col">Total Count</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Growth</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Students</td>
+                                <td><strong>10,000+</strong></td>
+                                <td><span class="badge badge-success">Enrolled</span></td>
+                                <td>+12% this year</td>
+                            </tr>
+                            <tr>
+                                <td>Courses</td>
+                                <td><strong>500+</strong></td>
+                                <td><span class="badge badge-info">Active</span></td>
+                                <td>+35 new subjects</td>
+                            </tr>
+                            <tr>
+                                <td>Faculty</td>
+                                <td><strong>50+</strong></td>
+                                <td><span class="badge badge-primary">Accredited</span></td>
+                                <td>Full-time mentors</td>
+                            </tr>
+                            <tr>
+                                <td>Satisfaction</td>
+                                <td><strong>98%</strong></td>
+                                <td><span class="badge badge-success">Top Rated</span></td>
+                                <td>Based on student reviews</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Quick Links using CSS Grid -->
+            <section aria-labelledby="links-heading">
+                <div class="section-title-wrap">
+                    <p class="section-subtitle">Navigation Hub</p>
+                    <h2 id="links-heading">Quick Links</h2>
+                    <p class="section-desc">Jump straight to popular academic tools and campus portals.</p>
+                </div>
+
+                <div class="quick-links-grid">
+                    <a href="pages/dashboard.html" class="quick-link-item">
+                        <span>&#128202; Go to Dashboard</span>
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+                    <a href="pages/courses.html" class="quick-link-item">
+                        <span>&#128218; Browse Courses</span>
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+                    <a href="pages/events.html" class="quick-link-item">
+                        <span>&#128197; Upcoming Events</span>
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+                    <a href="pages/contact.html" class="quick-link-item">
+                        <span>&#128222; Contact Us</span>
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+                    <a href="pages/faq.html" class="quick-link-item">
+                        <span>&#10067; Frequently Asked Questions</span>
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+                    <a href="pages/feedback.html" class="quick-link-item">
+                        <span>&#128172; Submit Portal Feedback</span>
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Site Footer with Flexbox -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="brand">
+                    <span class="brand-icon" style="filter: brightness(1.2);">&#127891;</span>
+                    <div class="brand-text">
+                        <h2 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0;">StudentHub</h2>
+                        <p style="color: #94a3b8; font-size: 0.75rem;">Student Academic Portal</p>
+                    </div>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/dashboard.html">Dashboard</a></li>
+                    <li><a href="pages/courses.html">Courses</a></li>
+                    <li><a href="pages/events.html">Events</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="pages/faq.html">FAQ</a></li>
+                    <li><a href="pages/register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StudentHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
