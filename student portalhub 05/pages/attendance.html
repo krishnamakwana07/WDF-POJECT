@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentHub Attendance — View your overall and course-wise attendance records.">
+    <title>Attendance — StudentHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Site Header with Flexbox Navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon" aria-hidden="true">&#127891;</span>
+                <div class="brand-text">
+                    <h1>StudentHub</h1>
+                    <p>Student Academic Portal</p>
+                </div>
+            </a>
+
+            <!-- Mobile Navigation Toggle -->
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="assignment.html" class="nav-link">Assignments</a></li>
+                    <li><a href="attendance.html" class="nav-link active">Attendance</a></li>
+                    <li><a href="result.html" class="nav-link">Results</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="profile.html" class="nav-link">Profile</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="admin.html" class="nav-link">Admin</a></li>
+                </ul>
+                <div class="nav-auth-buttons">
+                    <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                    <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+        <div class="container">
+
+            <section class="section-title-wrap" aria-labelledby="attendance-heading">
+                <span class="badge badge-success" style="margin-bottom: 0.5rem;">Academic Integrity</span>
+                <h2 id="attendance-heading">Attendance Record</h2>
+                <p class="section-desc">Real-time attendance tracking across all lectures, lab tutorials, and practical sessions.</p>
+            </section>
+
+            <!-- Overall Summary Stats using CSS Grid -->
+            <div class="grid-stats" style="margin-bottom: var(--space-8);">
+                <div class="stat-card" style="border-top: 4px solid var(--color-primary);">
+                    <span class="stat-number">120</span>
+                    <span class="stat-label">Total Classes</span>
+                </div>
+                <div class="stat-card" style="border-top: 4px solid var(--color-success);">
+                    <span class="stat-number">110</span>
+                    <span class="stat-label">Classes Attended</span>
+                </div>
+                <div class="stat-card" style="border-top: 4px solid var(--color-danger);">
+                    <span class="stat-number">10</span>
+                    <span class="stat-label">Total Absent</span>
+                </div>
+                <div class="stat-card" style="border-top: 4px solid var(--color-secondary);">
+                    <span class="stat-number">92%</span>
+                    <span class="stat-label">Overall Percentage</span>
+                    <span class="badge badge-success" style="margin-top: 0.5rem;">&gt; 75% Eligible</span>
+                </div>
+            </div>
+
+            <!-- Course-wise Attendance Table inside Card -->
+            <div class="card" style="margin-bottom: var(--space-8);">
+                <div class="card-header">
+                    <div>
+                        <h3 style="margin-bottom: 0; font-size: var(--font-size-lg);">Course-wise Breakdown</h3>
+                        <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-bottom: 0;">University mandatory threshold: 75% minimum attendance per course.</p>
+                    </div>
+                    <span class="badge badge-primary">Semester 5</span>
+                </div>
+
+                <div class="card-body">
+                    <div class="table-responsive" style="margin-bottom: 0;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Course</th>
+                                    <th scope="col">Total Classes</th>
+                                    <th scope="col">Present</th>
+                                    <th scope="col">Absent</th>
+                                    <th scope="col">Percentage</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>CS301 Data Structures &amp; Algorithms</strong></td>
+                                    <td>24</td>
+                                    <td>22</td>
+                                    <td>2</td>
+                                    <td><strong>92%</strong></td>
+                                    <td><span class="badge badge-success">Good</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CS302 Web Development</strong></td>
+                                    <td>18</td>
+                                    <td>17</td>
+                                    <td>1</td>
+                                    <td><strong>94%</strong></td>
+                                    <td><span class="badge badge-success">Good</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CS303 Database Management</strong></td>
+                                    <td>22</td>
+                                    <td>20</td>
+                                    <td>2</td>
+                                    <td><strong>91%</strong></td>
+                                    <td><span class="badge badge-success">Good</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CS304 Operating Systems</strong></td>
+                                    <td>20</td>
+                                    <td>18</td>
+                                    <td>2</td>
+                                    <td><strong>90%</strong></td>
+                                    <td><span class="badge badge-success">Good</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CS305 Computer Networks</strong></td>
+                                    <td>18</td>
+                                    <td>17</td>
+                                    <td>1</td>
+                                    <td><strong>94%</strong></td>
+                                    <td><span class="badge badge-success">Good</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CS306 Software Engineering</strong></td>
+                                    <td>18</td>
+                                    <td>16</td>
+                                    <td>2</td>
+                                    <td><strong>89%</strong></td>
+                                    <td><span class="badge badge-success">Good</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Site Footer with Flexbox -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="brand">
+                    <span class="brand-icon" style="filter: brightness(1.2);">&#127891;</span>
+                    <div class="brand-text">
+                        <h2 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0;">StudentHub</h2>
+                        <p style="color: #94a3b8; font-size: 0.75rem;">Student Academic Portal</p>
+                    </div>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StudentHub. All rights reserved.</p>
+                <p>Designed with mobile-first CSS Grid &amp; Flexbox for accessibility and performance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
