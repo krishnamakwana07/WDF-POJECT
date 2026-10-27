@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create a new StudentHub account to access your academic portal.">
+    <title>Register - StudentHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Site Header with Flexbox Navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon" aria-hidden="true">&#127891;</span>
+                <div class="brand-text">
+                    <h1>StudentHub</h1>
+                    <p>Student Academic Portal</p>
+                </div>
+            </a>
+
+            <!-- Mobile Navigation Toggle -->
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="assignment.html" class="nav-link">Assignments</a></li>
+                    <li><a href="attendance.html" class="nav-link">Attendance</a></li>
+                    <li><a href="result.html" class="nav-link">Results</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="profile.html" class="nav-link">Profile</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="admin.html" class="nav-link">Admin</a></li>
+                </ul>
+                <div class="nav-auth-buttons">
+                    <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                    <a href="register.html" class="btn btn-primary btn-sm active">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+        <div class="container">
+            <div class="auth-wrapper">
+                <div class="auth-card">
+                    <div class="auth-header">
+                        <span class="badge badge-primary" style="margin-bottom: 0.5rem;">Join StudentHub</span>
+                        <h2>Student Registration Form</h2>
+                        <p style="margin-bottom: 0;">Complete all required fields below. All inputs are validated using JavaScript Regular Expressions.</p>
+                    </div>
+
+                    <form id="studentRegistrationForm" action="../php/process_registration.php" method="post" novalidate>
+                        <fieldset class="form-fieldset">
+                            <legend class="form-legend">Personal &amp; Contact Details</legend>
+
+                            <!-- Form Grid using CSS Grid (1 col on mobile, 2 cols on tablet/desktop) -->
+                            <div class="form-grid form-grid-2">
+                                <!-- 1. Full Name -->
+                                <div class="form-group">
+                                    <label for="fullname" class="form-label">Full Name <span style="color: var(--color-danger)">*</span></label>
+                                    <input type="text" id="fullname" name="fullname" class="form-control" placeholder="e.g. Arjun Patel" required autocomplete="name" aria-describedby="fullname-error fullname-hint">
+                                    <span id="fullname-error" class="form-error" role="alert"></span>
+                                    <span id="fullname-hint" class="form-hint">Alphabets &amp; spaces only, 3 to 50 characters.</span>
+                                </div>
+
+                                <!-- 2. Email Address -->
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address <span style="color: var(--color-danger)">*</span></label>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="e.g. arjun.patel@university.edu" required autocomplete="email" aria-describedby="email-error email-hint">
+                                    <span id="email-error" class="form-error" role="alert"></span>
+                                    <span id="email-hint" class="form-hint">Standard email format (e.g. user@domain.com).</span>
+                                </div>
+
+                                <!-- 3. Mobile Number -->
+                                <div class="form-group">
+                                    <label for="mobile" class="form-label">Mobile Number <span style="color: var(--color-danger)">*</span></label>
+                                    <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="e.g. 9876543210" maxlength="10" required autocomplete="tel" aria-describedby="mobile-error mobile-hint">
+                                    <span id="mobile-error" class="form-error" role="alert"></span>
+                                    <span id="mobile-hint" class="form-hint">10 digits starting with 6, 7, 8, or 9.</span>
+                                </div>
+
+                                <!-- 4. Gender (Radio) -->
+                                <div class="form-group">
+                                    <span id="gender-label" class="form-label">Gender <span style="color: var(--color-danger)">*</span></span>
+                                    <div class="radio-group-container" id="gender-group" role="radiogroup" aria-labelledby="gender-label" aria-describedby="gender-error">
+                                        <label class="radio-card" for="gender-male">
+                                            <input type="radio" id="gender-male" name="gender" value="Male">
+                                            <span>Male</span>
+                                        </label>
+                                        <label class="radio-card" for="gender-female">
+                                            <input type="radio" id="gender-female" name="gender" value="Female">
+                                            <span>Female</span>
+                                        </label>
+                                        <label class="radio-card" for="gender-other">
+                                            <input type="radio" id="gender-other" name="gender" value="Other">
+                                            <span>Other</span>
+                                        </label>
+                                    </div>
+                                    <span id="gender-error" class="form-error" role="alert"></span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-fieldset">
+                            <legend class="form-legend">Academic Information</legend>
+                            <div class="form-grid form-grid-2">
+                                <!-- 5. Course Dropdown -->
+                                <div class="form-group">
+                                    <label for="course" class="form-label">Course / Program <span style="color: var(--color-danger)">*</span></label>
+                                    <select id="course" name="course" class="form-control" required aria-describedby="course-error course-hint">
+                                        <option value="">-- Select Course --</option>
+                                        <option value="B.Tech Computer Science">B.Tech Computer Science</option>
+                                        <option value="B.Tech Information Technology">B.Tech Information Technology</option>
+                                        <option value="B.Tech Electronics & Communication">B.Tech Electronics &amp; Communication</option>
+                                        <option value="B.Tech Mechanical Engineering">B.Tech Mechanical Engineering</option>
+                                        <option value="BCA (Bachelor of Computer Applications)">BCA (Bachelor of Computer Applications)</option>
+                                        <option value="MCA (Master of Computer Applications)">MCA (Master of Computer Applications)</option>
+                                        <option value="B.Sc Computer Science">B.Sc Computer Science</option>
+                                    </select>
+                                    <span id="course-error" class="form-error" role="alert"></span>
+                                    <span id="course-hint" class="form-hint">Choose your enrolled academic degree.</span>
+                                </div>
+
+                                <!-- 6. Year Dropdown -->
+                                <div class="form-group">
+                                    <label for="year" class="form-label">Academic Year <span style="color: var(--color-danger)">*</span></label>
+                                    <select id="year" name="year" class="form-control" required aria-describedby="year-error year-hint">
+                                        <option value="">-- Select Academic Year --</option>
+                                        <option value="1st Year">1st Year (Freshman)</option>
+                                        <option value="2nd Year">2nd Year (Sophomore)</option>
+                                        <option value="3rd Year">3rd Year (Junior)</option>
+                                        <option value="4th Year">4th Year (Senior)</option>
+                                    </select>
+                                    <span id="year-error" class="form-error" role="alert"></span>
+                                    <span id="year-hint" class="form-hint">Select your current academic stage.</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-fieldset">
+                            <legend class="form-legend">Account Security</legend>
+                            <div class="form-grid form-grid-2">
+                                <!-- 7. Password -->
+                                <div class="form-group">
+                                    <label for="password" class="form-label">Password <span style="color: var(--color-danger)">*</span></label>
+                                    <div class="password-input-group">
+                                        <input type="password" id="password" name="password" class="form-control" placeholder="Min. 8 characters" required autocomplete="new-password" aria-describedby="password-error password-hint">
+                                        <button type="button" class="password-toggle-btn" aria-label="Toggle password visibility" data-target="password" title="Show/Hide password">&#128065;</button>
+                                    </div>
+                                    <div class="password-meter-wrap">
+                                        <div class="strength-meter"><div class="strength-bar" id="strength-bar"></div></div>
+                                        <div class="strength-text" id="strength-text">Password Strength: None</div>
+                                    </div>
+                                    <span id="password-error" class="form-error" role="alert"></span>
+                                    <span id="password-hint" class="form-hint">8-32 chars with &ge;1 uppercase, &ge;1 lowercase, &ge;1 number, and &ge;1 special symbol (@$!%*?&amp;#).</span>
+                                </div>
+
+                                <!-- 8. Confirm Password -->
+                                <div class="form-group">
+                                    <label for="confirmPassword" class="form-label">Confirm Password <span style="color: var(--color-danger)">*</span></label>
+                                    <div class="password-input-group">
+                                        <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" placeholder="Re-enter password" required autocomplete="new-password" aria-describedby="confirmPassword-error confirmPassword-hint">
+                                        <button type="button" class="password-toggle-btn" aria-label="Toggle confirm password visibility" data-target="confirmPassword" title="Show/Hide password">&#128065;</button>
+                                    </div>
+                                    <span id="confirmPassword-error" class="form-error" role="alert"></span>
+                                    <span id="confirmPassword-hint" class="form-hint">Must match password exactly.</span>
+                                </div>
+                            </div>
+
+                            <!-- 9. Terms Acceptance -->
+                            <div class="checkbox-group" id="terms-group">
+                                <input type="checkbox" id="terms" name="terms" required aria-describedby="terms-error">
+                                <label for="terms" class="checkbox-label">
+                                    I agree to the <a href="about.html" target="_blank">Terms and Conditions</a>, University Privacy Policy, and Student Code of Conduct. <span style="color: var(--color-danger)">*</span>
+                                </label>
+                            </div>
+                            <span id="terms-error" class="form-error" role="alert" style="margin-top: -0.5rem; margin-bottom: 0.5rem;"></span>
+                        </fieldset>
+
+                        <div class="form-actions-row">
+                            <button type="submit" class="btn btn-primary" id="btn-submit" style="font-size: 1rem;">Complete Registration &rarr;</button>
+                            <button type="reset" class="btn btn-outline" id="btn-reset" style="font-size: 1rem;">Clear Form</button>
+                        </div>
+                    </form>
+
+                    <!-- Registration Success Summary Card -->
+                    <div id="registration-summary" class="registration-summary" aria-live="polite">
+                        <div class="summary-header">
+                            <span class="summary-icon">&#10004;</span>
+                            <div>
+                                <h3>Student Registration Successful!</h3>
+                                <p style="margin: 0; font-size: 0.875rem; color: var(--color-text-muted);">All fields verified using Regular Expression rules. Account created successfully.</p>
+                            </div>
+                        </div>
+                        <div class="summary-grid">
+                            <div class="summary-item">
+                                <div class="summary-label">Full Name</div>
+                                <div class="summary-value" id="summary-fullname">-</div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-label">Email Address</div>
+                                <div class="summary-value" id="summary-email">-</div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-label">Mobile Number</div>
+                                <div class="summary-value" id="summary-mobile">-</div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-label">Gender</div>
+                                <div class="summary-value" id="summary-gender">-</div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-label">Course / Program</div>
+                                <div class="summary-value" id="summary-course">-</div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-label">Academic Year</div>
+                                <div class="summary-value" id="summary-year">-</div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-label">Terms Accepted</div>
+                                <div class="summary-value" style="color: var(--color-success);">&#10004; Yes (Agreed)</div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-label">Registration Status</div>
+                                <div class="summary-value" style="color: var(--color-primary); font-weight: 700;">&#9679; Verified &amp; Active</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: var(--space-3); justify-content: flex-end; flex-wrap: wrap;">
+                            <button type="button" class="btn btn-outline btn-sm" id="btn-register-another">Register Another Student</button>
+                            <a href="login.html" class="btn btn-primary btn-sm">Proceed to Login &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: var(--space-6); padding-top: var(--space-4); border-top: 1px solid var(--color-border);">
+                        <p style="margin-bottom: 0;">Already have an account? <a href="login.html" style="font-weight: 600;">Login here &rarr;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Site Footer with Flexbox -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="brand">
+                    <span class="brand-icon" style="filter: brightness(1.2);">&#127891;</span>
+                    <div class="brand-text">
+                        <h2 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0;">StudentHub</h2>
+                        <p style="color: #94a3b8; font-size: 0.75rem;">Student Academic Portal</p>
+                    </div>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StudentHub. All rights reserved.</p>
+                <p>Designed with mobile-first CSS Grid &amp; Flexbox for accessibility and performance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
