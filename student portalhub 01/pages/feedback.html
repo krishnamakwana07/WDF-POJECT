@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentHub - Share Your Feedback">
+    <title>Feedback - StudentHub</title>
+</head>
+<body>
+
+<a href="#main-content">Skip to main content</a>
+
+<header>
+    <h1>&#127891; StudentHub</h1>
+    <p>Student Academic Portal</p>
+    <nav aria-label="Main navigation">
+        <a href="../index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="courses.html">Courses</a> |
+        <a href="assignment.html">Assignments</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="result.html">Results</a> |
+        <a href="events.html">Events</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="faq.html">FAQ</a> |
+        <strong><a href="feedback.html">Feedback</a></strong> |
+        <a href="admin.html">Admin</a> |
+        <a href="login.html">Login</a> |
+        <a href="register.html">Register</a>
+    </nav>
+    <hr>
+</header>
+
+<main id="main-content">
+
+    <section>
+        <h2>Share Your Feedback</h2>
+        <p>We value your feedback. Help us improve StudentHub.</p>
+
+        <form action="#" method="post">
+            <p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="type">Type:</label><br>
+                <select id="type" name="type">
+                    <option value="general">General</option>
+                    <option value="bug">Bug Report</option>
+                    <option value="feature">Feature Request</option>
+                    <option value="complaint">Complaint</option>
+                    <option value="suggestion">Suggestion</option>
+                </select>
+            </p>
+
+            <fieldset>
+                <legend>Rate your experience (1-5)</legend>
+
+                <input type="radio" id="rating1" name="rating" value="1">
+                <label for="rating1">1 - Poor</label><br>
+
+                <input type="radio" id="rating2" name="rating" value="2">
+                <label for="rating2">2 - Fair</label><br>
+
+                <input type="radio" id="rating3" name="rating" value="3">
+                <label for="rating3">3 - Good</label><br>
+
+                <input type="radio" id="rating4" name="rating" value="4">
+                <label for="rating4">4 - Very Good</label><br>
+
+                <input type="radio" id="rating5" name="rating" value="5">
+                <label for="rating5">5 - Excellent</label>
+            </fieldset>
+
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Submit Feedback</button>
+            </p>
+        </form>
+    </section>
+
+</main>
+
+<hr>
+
+<footer>
+    <p>&copy; 2026 StudentHub. All rights reserved.</p>
+    <p>
+        <a href="../index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="faq.html">FAQ</a>
+    </p>
+</footer>
+
+</body>
+</html>
