@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentHub - Campus Events, Workshops, Competitions, and Activities">
+    <title>Events - StudentHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Site Header with Flexbox Navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon" aria-hidden="true">&#127891;</span>
+                <div class="brand-text">
+                    <h1>StudentHub</h1>
+                    <p>Student Academic Portal</p>
+                </div>
+            </a>
+
+            <!-- Mobile Navigation Toggle -->
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="assignment.html" class="nav-link">Assignments</a></li>
+                    <li><a href="attendance.html" class="nav-link">Attendance</a></li>
+                    <li><a href="result.html" class="nav-link">Results</a></li>
+                    <li><a href="events.html" class="nav-link active">Events</a></li>
+                    <li><a href="profile.html" class="nav-link">Profile</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="admin.html" class="nav-link">Admin</a></li>
+                </ul>
+                <div class="nav-auth-buttons">
+                    <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                    <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+        <div class="container">
+
+            <!-- Events Header & Intro -->
+            <section style="margin-bottom: var(--space-6);" aria-labelledby="events-heading">
+                <div class="section-title-wrap">
+                    <span class="badge badge-primary" style="margin-bottom: 0.5rem;">Campus Life</span>
+                    <h2 id="events-heading">Campus Events &amp; Activities</h2>
+                    <p class="section-desc">Stay updated with upcoming hackathons, tech fests, workshops, and cultural celebrations.</p>
+                </div>
+
+                <!-- Filter Bar using Flexbox -->
+                <div class="events-filter-bar">
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <button class="btn btn-sm btn-primary">All Events</button>
+                        <button class="btn btn-sm btn-outline">Technical</button>
+                        <button class="btn btn-sm btn-outline">Cultural</button>
+                        <button class="btn btn-sm btn-outline">Sports</button>
+                        <button class="btn btn-sm btn-outline">Workshops</button>
+                    </div>
+                    <div style="font-size: var(--font-size-sm); color: var(--color-text-muted);">
+                        Showing <strong>6 upcoming events</strong>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Events Cards Grid using CSS Grid -->
+            <section style="margin-bottom: var(--space-10);" aria-labelledby="upcoming-cards-heading">
+                <h3 id="upcoming-cards-heading" style="margin-bottom: var(--space-4); font-size: var(--font-size-xl);">Featured Event Lineup</h3>
+
+                <div class="grid-responsive-cards" style="margin-bottom: var(--space-8);">
+                    
+                    <!-- Event 1 -->
+                    <article class="event-card">
+                        <div class="event-card-header">
+                            <div class="event-date-badge">
+                                <span class="event-date-day">25</span>
+                                <span class="event-date-month">Jul</span>
+                            </div>
+                            <div>
+                                <span class="badge badge-primary">Technical</span>
+                                <h3 style="font-size: var(--font-size-md); margin-top: 0.25rem; margin-bottom: 0;">Annual Tech Fest</h3>
+                            </div>
+                        </div>
+                        <div class="event-card-body">
+                            <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
+                                Flagship university technology exhibition showcasing student robotics, project demonstrations, and keynotes.
+                            </p>
+                            <div class="event-meta-item">
+                                <span aria-hidden="true">&#128205;</span>
+                                <span>Main Auditorium</span>
+                            </div>
+                            <div class="event-meta-item">
+                                <span aria-hidden="true">&#9200;</span>
+                                <span>10:00 AM - 5:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge badge-success">Open for All</span>
+                            <a href="#" class="btn btn-sm btn-primary">Register Free</a>
+                        </div>
+                    </article>
+
+                    <!-- Event 2 -->
+                    <article class="event-card">
+                        <div class="event-card-header">
+                            <div class="event-date-badge" style="background: var(--color-secondary);">
+                                <span class="event-date-day">02</span>
+                                <span class="event-date-month">Aug</span>
+                            </div>
+                            <div>
+                                <span class="badge badge-secondary">Technical</span>
+                                <h3 style="font-size: var(--font-size-md); margin-top: 0.25rem; margin-bottom: 0;">Coding Hackathon</h3>
+                            </div>
+                        </div>
+                        <div class="event-card-body">
+                            <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
+                                24-hour sprint to build AI-driven solutions addressing sustainable campus challenges. Prizes worth ₹50,000!
+                            </p>
+                            <div class="event-meta-item">
+                                <span aria-hidden="true">&#128205;</span>
+                                <span>CS Lab 1 &amp; 2</span>
+                            </div>
+                            <div class="event-meta-item">
+                                <span aria-hidden="true">&#9200;</span>
+                                <span>9:00 AM (24 Hours)</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge badge-warning">Teams of 3-4</span>
+                            <a href="#" class="btn btn-sm btn-primary">Join Hackathon</a>
+                        </div>
+                    </article>
+
+                    <!-- Event 3 -->
+                    <article class="event-card">
+                        <div class="event-card-header">
+                            <div class="event-date-badge" style="background: #e11d48;">
+                                <span class="event-date-day">10</span>
+                                <span class="event-date-month">Aug</span>
+                            </div>
+                            <div>
+                                <span class="badge badge-danger">Cultural</span>
+                                <h3 style="font-size: var(--font-size-md); margin-top: 0.25rem; margin-bottom: 0;">Cultural Night</h3>
+                            </div>
+                        </div>
+                        <div class="event-card-body">
+                            <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
+                                An evening of music, drama, dance performances, and food stalls curated by student clubs.
+                            </p>
+                            <div class="event-meta-item">
+                                <span aria-hidden="true">&#128205;</span>
+                                <span>Open Amphitheatre</span>
+                            </div>
+                            <div class="event-meta-item">
+                                <span aria-hidden="true">&#9200;</span>
+                                <span>6:00 PM onwards</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge badge-info">Passes Required</span>
+                            <a href="#" class="btn btn-sm btn-outline">Get Pass</a>
+                        </div>
+                    </article>
+
+                    <!-- Event 4 -->
+                    <article class="event-card">
+                        <div class="event-card-header">
+                            <div class="event-date-badge" style="background: #16a34a;">
+                                <span class="event-date-day">18</span>
+                                <span class="event-date-month">Aug</span>
+                            </div>
+                            <div>
+                                <span class="badge badge-success">Sports</span>
+                                <h3 style="font-size: var(--font-size-md); margin-top: 0.25rem; margin-bottom: 0;">Annual Sports Day</h3>
+                            </div>
+                        </div>
+                        <div class="event-card-body">
+                            <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
+                                Inter-department athletic tournaments including football, cricket, track sprints, and badminton.
+                            </p>
+                            <div class="event-meta-item">
+                                <span aria-hidden="true">&#128205;</span>
+                                <span>University Ground</span>
+                            </div>
+                            <div class="event-meta-item">
+                                <span aria-hidden="true">&#9200;</span>
+                                <span>8:00 AM - 4:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge badge-success">Participant Signups</span>
+                            <a href="#" class="btn btn-sm btn-outline">Enroll Team</a>
+                        </div>
+                    </article>
+
+                    <!-- Event 5 -->
+                    <article class="event-card">
+                        <div class="event-card-header">
+                            <div class="event-date-badge" style="background: #0284c7;">
+                                <span class="event-date-day">25</span>
+                                <span class="event-date-month">Aug</span>
+                            </div>
+                            <div>
+                                <span class="badge badge-info">Workshop</span>
+                                <h3 style="font-size: var(--font-size-md); margin-top: 0.25rem; margin-bottom: 0;">AI &amp; ML Workshop</h3>
+                            </div>
+                        </div>
+                        <div class="event-card-body">
+                            <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
+                                Hands-on practical masterclass exploring transformer architectures and fine-tuning neural networks.
+                            </p>
+                            <div class="event-meta-item">
+                                <span aria-hidden="true">&#128205;</span>
+                                <span>Seminar Hall</span>
+                            </div>
+                            <div class="event-meta-item">
+                                <span aria-hidden="true">&#9200;</span>
+                                <span>2:00 PM - 5:30 PM</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge badge-warning">Limited 60 Seats</span>
+                            <a href="#" class="btn btn-sm btn-primary">Reserve Spot</a>
+                        </div>
+                    </article>
+
+                    <!-- Event 6 -->
+                    <article class="event-card">
+                        <div class="event-card-header">
+                            <div class="event-date-badge" style="background: #7c3aed;">
+                                <span class="event-date-day">01</span>
+                                <span class="event-date-month">Sep</span>
+                            </div>
+                            <div>
+                                <span class="badge badge-secondary">Academic</span>
+                                <h3 style="font-size: var(--font-size-md); margin-top: 0.25rem; margin-bottom: 0;">Cybersecurity Lecture</h3>
+                            </div>
+                        </div>
+                        <div class="event-card-body">
+                            <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-3);">
+                                Distinguished guest session by industry security architect on zero-trust cloud infrastructure.
+                            </p>
+                            <div class="event-meta-item">
+                                <span aria-hidden="true">&#128205;</span>
+                                <span>Lecture Hall 1</span>
+                            </div>
+                            <div class="event-meta-item">
+                                <span aria-hidden="true">&#9200;</span>
+                                <span>11:00 AM - 1:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge badge-primary">Certificate Provided</span>
+                            <a href="#" class="btn btn-sm btn-outline">Attend Lecture</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Complete Schedule Table (Mobile Responsive) -->
+            <section aria-labelledby="schedule-table-heading">
+                <div class="section-title-wrap">
+                    <p class="section-subtitle">Calendar Overview</p>
+                    <h3 id="schedule-table-heading" style="font-size: var(--font-size-xl);">All Events Schedule</h3>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Event Name</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Venue</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>25 Jul 2026</strong></td>
+                                <td>Annual Tech Fest</td>
+                                <td><span class="badge badge-primary">Technical</span></td>
+                                <td>Main Auditorium</td>
+                                <td>10:00 AM</td>
+                                <td><a href="#" class="btn btn-sm btn-outline">Details</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>02 Aug 2026</strong></td>
+                                <td>Coding Hackathon</td>
+                                <td><span class="badge badge-secondary">Technical</span></td>
+                                <td>CS Lab</td>
+                                <td>9:00 AM</td>
+                                <td><a href="#" class="btn btn-sm btn-outline">Details</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>10 Aug 2026</strong></td>
+                                <td>Cultural Night</td>
+                                <td><span class="badge badge-danger">Cultural</span></td>
+                                <td>Open Amphitheatre</td>
+                                <td>6:00 PM</td>
+                                <td><a href="#" class="btn btn-sm btn-outline">Details</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>18 Aug 2026</strong></td>
+                                <td>Sports Day</td>
+                                <td><span class="badge badge-success">Sports</span></td>
+                                <td>University Ground</td>
+                                <td>8:00 AM</td>
+                                <td><a href="#" class="btn btn-sm btn-outline">Details</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>25 Aug 2026</strong></td>
+                                <td>AI Workshop</td>
+                                <td><span class="badge badge-info">Workshop</span></td>
+                                <td>Seminar Hall</td>
+                                <td>2:00 PM</td>
+                                <td><a href="#" class="btn btn-sm btn-outline">Details</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>01 Sep 2026</strong></td>
+                                <td>Guest Lecture: Cybersecurity</td>
+                                <td><span class="badge badge-primary">Academic</span></td>
+                                <td>Lecture Hall 1</td>
+                                <td>11:00 AM</td>
+                                <td><a href="#" class="btn btn-sm btn-outline">Details</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Site Footer with Flexbox -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="brand">
+                    <span class="brand-icon" style="filter: brightness(1.2);">&#127891;</span>
+                    <div class="brand-text">
+                        <h2 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0;">StudentHub</h2>
+                        <p style="color: #94a3b8; font-size: 0.75rem;">Student Academic Portal</p>
+                    </div>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StudentHub. All rights reserved.</p>
+                <p>Designed with mobile-first CSS Grid &amp; Flexbox for accessibility and performance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

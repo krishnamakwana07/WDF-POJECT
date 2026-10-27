@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentHub - Frequently Asked Questions">
+    <title>FAQ - StudentHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Top Notification Banner (Dismissible with LocalStorage persistence) -->
+    <aside id="announcement-banner" class="notification-banner" role="region" aria-label="Campus Announcement">
+        <div class="container banner-inner">
+            <div class="banner-content">
+                <span class="banner-badge">Portal Helpdesk</span>
+                <span class="banner-icon" aria-hidden="true">&#128161;</span>
+                <p class="banner-text">
+                    <strong>Need immediate assistance?</strong> Search our knowledge base or open a support ticket with the university IT team.
+                </p>
+            </div>
+            <div class="banner-actions">
+                <button type="button" class="btn-banner-action" data-modal-target="#helpdesk-modal">Get Help</button>
+                <button type="button" class="banner-close" aria-label="Dismiss announcement banner" title="Dismiss announcement">&times;</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Site Header with Flexbox Navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon" aria-hidden="true">&#127891;</span>
+                <div class="brand-text">
+                    <h1>StudentHub</h1>
+                    <p>Student Academic Portal</p>
+                </div>
+            </a>
+
+            <!-- Header Action Controls: Theme Switcher & Mobile Menu Toggle -->
+            <div class="header-actions">
+                <button type="button" id="theme-toggle" class="theme-toggle-btn" aria-label="Switch between light and dark theme" title="Toggle theme">
+                    <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+                    <span class="sr-only">Toggle theme</span>
+                </button>
+                <button type="button" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav id="main-nav-menu" class="nav-menu" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="assignment.html" class="nav-link">Assignments</a></li>
+                    <li><a href="attendance.html" class="nav-link">Attendance</a></li>
+                    <li><a href="result.html" class="nav-link">Results</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="profile.html" class="nav-link">Profile</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="admin.html" class="nav-link">Admin</a></li>
+                </ul>
+                <div class="nav-auth-buttons">
+                    <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                    <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+        <div class="container">
+
+            <section class="section-title-wrap" aria-labelledby="faq-heading">
+                <span class="badge badge-primary" style="margin-bottom: 0.5rem;">Knowledge Base</span>
+                <h2 id="faq-heading">Frequently Asked Questions</h2>
+                <p class="section-desc">Find quick solutions to common questions regarding portals, enrollments, exams, and attendance.</p>
+            </section>
+
+            <!-- FAQ Search & Filter Controls -->
+            <div class="faq-filter-bar">
+                <div class="faq-search-wrapper">
+                    <span class="faq-search-icon" aria-hidden="true">&#128269;</span>
+                    <input type="search" class="faq-search-input" placeholder="Search questions or keywords (e.g. registration, attendance, exam, password)..." aria-label="Search FAQs">
+                    <button type="button" class="faq-clear-search" aria-label="Clear search query">&times;</button>
+                </div>
+                <div class="faq-toolbar">
+                    <div class="faq-categories" role="group" aria-label="FAQ categories">
+                        <button type="button" class="faq-cat-btn is-active" data-category="all">All Topics</button>
+                        <button type="button" class="faq-cat-btn" data-category="courses">Courses &amp; Electives</button>
+                        <button type="button" class="faq-cat-btn" data-category="attendance">Attendance</button>
+                        <button type="button" class="faq-cat-btn" data-category="exams">Exams &amp; Results</button>
+                        <button type="button" class="faq-cat-btn" data-category="assignments">Assignments</button>
+                        <button type="button" class="faq-cat-btn" data-category="account">Account &amp; Security</button>
+                    </div>
+                    <div class="faq-actions-group">
+                        <span class="faq-count-badge">Showing 8 questions</span>
+                        <button type="button" class="btn btn-sm btn-outline" data-faq-action="expand-all">Expand All</button>
+                        <button type="button" class="btn btn-sm btn-outline" data-faq-action="collapse-all">Collapse All</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Accordion List -->
+            <div class="faq-accordion-container" data-accordion="true">
+                <!-- Item 1 -->
+                <div class="faq-accordion-item is-open" data-category="courses">
+                    <button type="button" class="faq-accordion-header" id="faq-q-1">
+                        <span>How do I register for courses and departmental electives?</span>
+                        <span class="faq-accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-accordion-content" id="faq-a-1">
+                        <div class="faq-accordion-inner">
+                            <div class="faq-accordion-body">
+                                Visit the <a href="courses.html">Courses</a> page and browse through the departmental and open electives. Choose your desired subjects, review prerequisite coursework, and click "Confirm Registration" prior to the semester add/drop deadline.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="faq-accordion-item" data-category="attendance">
+                    <button type="button" class="faq-accordion-header" id="faq-q-2">
+                        <span>How can I check my attendance percentage and lecture records?</span>
+                        <span class="faq-accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-accordion-content" id="faq-a-2">
+                        <div class="faq-accordion-inner">
+                            <div class="faq-accordion-body">
+                                Go to the <a href="attendance.html">Attendance</a> page from your student dashboard to inspect subject-wise lecture attendance percentages, attended vs. delivered counts, and real-time shortfall warnings.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="faq-accordion-item" data-category="exams">
+                    <button type="button" class="faq-accordion-header" id="faq-q-3">
+                        <span>When are semester results and official scorecards published?</span>
+                        <span class="faq-accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-accordion-content" id="faq-a-3">
+                        <div class="faq-accordion-inner">
+                            <div class="faq-accordion-body">
+                                Results are officially verified and published within two weeks following the conclusion of the examination period. You can check subject grades, SGPA, and download provisional PDF scorecards on the <a href="result.html">Results</a> page.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="faq-accordion-item" data-category="account">
+                    <button type="button" class="faq-accordion-header" id="faq-q-4">
+                        <span>How do I reset my password or recover locked credentials?</span>
+                        <span class="faq-accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-accordion-content" id="faq-a-4">
+                        <div class="faq-accordion-inner">
+                            <div class="faq-accordion-body">
+                                Use the self-service recovery link on the <a href="login.html">Login</a> page to receive a secure OTP on your registered institutional email. You can also contact the campus IT desk directly via the <a href="contact.html">Contact</a> page.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="faq-accordion-item" data-category="courses">
+                    <button type="button" class="faq-accordion-header" id="faq-q-5">
+                        <span>Can I change my enrolled elective courses after registration?</span>
+                        <span class="faq-accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-accordion-content" id="faq-a-5">
+                        <div class="faq-accordion-inner">
+                            <div class="faq-accordion-body">
+                                Yes, elective course changes are permissible within the first two weeks of the semester with formal approval from your designated faculty academic advisor.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="faq-accordion-item" data-category="courses">
+                    <button type="button" class="faq-accordion-header" id="faq-q-6">
+                        <span>How do I contact my course professors and teaching assistants?</span>
+                        <span class="faq-accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-accordion-content" id="faq-a-6">
+                        <div class="faq-accordion-inner">
+                            <div class="faq-accordion-body">
+                                Visit the <a href="courses.html">Courses</a> page to view faculty profiles, departmental cabin numbers, and scheduled office consultation hours.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="faq-accordion-item" data-category="attendance">
+                    <button type="button" class="faq-accordion-header" id="faq-q-7">
+                        <span>What is the minimum mandatory attendance requirement?</span>
+                        <span class="faq-accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-accordion-content" id="faq-a-7">
+                        <div class="faq-accordion-inner">
+                            <div class="faq-accordion-body">
+                                A minimum of <strong>75% attendance</strong> is strictly enforced in every course module to earn examination clearance and admit card generation under university academic regulations.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="faq-accordion-item" data-category="assignments">
+                    <button type="button" class="faq-accordion-header" id="faq-q-8">
+                        <span>How do I upload assignments online and review feedback?</span>
+                        <span class="faq-accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-accordion-content" id="faq-a-8">
+                        <div class="faq-accordion-inner">
+                            <div class="faq-accordion-body">
+                                Navigate to the <a href="assignment.html">Assignments</a> page, locate the pending deadline, and click "Upload Submission" to attach your files. After evaluation, faculty remarks and rubrics will appear on the same portal dashboard.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Empty state if search finds nothing -->
+                <div class="faq-no-results" role="alert">
+                    <p style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--color-text-main);">No matching questions found</p>
+                    <p style="margin-bottom: 1rem;">Try searching for a different keyword or choose another category filter.</p>
+                    <button type="button" class="btn btn-sm btn-outline faq-clear-search">Clear Search Filter</button>
+                </div>
+            </div>
+
+            <!-- Still Have Questions Card -->
+            <div class="card" style="text-align: center; margin-top: var(--space-8); background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-surface-hover) 100%);">
+                <h3 style="margin-bottom: var(--space-2); color: var(--color-primary-dark);">Still have questions?</h3>
+                <p style="margin-bottom: var(--space-4); max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Can't find the answer you're looking for? Reach out to our campus student support center or open a direct query ticket.
+                </p>
+                <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-primary">&#9993; Contact Support Team</a>
+                    <button type="button" class="btn btn-outline" data-modal-target="#helpdesk-modal">&#128172; Quick Helpdesk Dialog</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Site Footer with Flexbox -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="brand">
+                    <span class="brand-icon" style="filter: brightness(1.2);">&#127891;</span>
+                    <div class="brand-text">
+                        <h2 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0;">StudentHub</h2>
+                        <p style="color: #94a3b8; font-size: 0.75rem;">Student Academic Portal</p>
+                    </div>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p style="margin-bottom: 0;">&copy; 2026 StudentHub. All rights reserved.</p>
+                <div>
+                    <button type="button" class="btn btn-sm btn-outline" style="color: #cbd5e1; border-color: #475569;" data-banner-restore>
+                        &#128227; Show Helpdesk Banner
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Accessible Modal Popup: Quick Helpdesk Modal -->
+    <div id="helpdesk-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-helpdesk-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 id="modal-helpdesk-title" class="modal-title">
+                    <span aria-hidden="true">&#128172;</span> StudentHub Quick Helpdesk
+                </h3>
+                <button type="button" class="modal-close-btn" data-modal-close aria-label="Close dialog">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Need urgent assistance with course enrollment, grade recalculation, or account access? Select an option below or send an instant inquiry to the academic office.</p>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: var(--space-4);">
+                    <div style="padding: var(--space-3); background: var(--color-surface-hover); border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+                        <strong style="color: var(--color-text-main);">&#128222; Academic Helpline:</strong> +91 (079) 2630-1234 (Mon&ndash;Fri, 9:00 AM &ndash; 5:00 PM)
+                    </div>
+                    <div style="padding: var(--space-3); background: var(--color-surface-hover); border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+                        <strong style="color: var(--color-text-main);">&#9993; Email Desk:</strong> support@studenthub.edu.in
+                    </div>
+                    <div style="padding: var(--space-3); background: var(--color-surface-hover); border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+                        <strong style="color: var(--color-text-main);">&#127979; Physical Desk:</strong> Academic Block A, Room 104
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline btn-sm" data-modal-close>Close</button>
+                <a href="contact.html" class="btn btn-primary btn-sm">Open Full Contact Page &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
