@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentHub Dashboard — View your academic summary, upcoming deadlines, and quick links.">
+    <title>Dashboard — StudentHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Site Header with Flexbox Navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon" aria-hidden="true">&#127891;</span>
+                <div class="brand-text">
+                    <h1>StudentHub</h1>
+                    <p>Student Academic Portal</p>
+                </div>
+            </a>
+
+            <!-- Mobile Navigation Toggle -->
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="dashboard.html" class="nav-link active">Dashboard</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="assignment.html" class="nav-link">Assignments</a></li>
+                    <li><a href="attendance.html" class="nav-link">Attendance</a></li>
+                    <li><a href="result.html" class="nav-link">Results</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="profile.html" class="nav-link">Profile</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                    <li><a href="admin.html" class="nav-link">Admin</a></li>
+                </ul>
+                <div class="nav-auth-buttons">
+                    <a href="profile.html" class="btn btn-outline btn-sm">Profile</a>
+                    <a href="login.html" class="btn btn-primary btn-sm">Sign Out</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+        <div class="container">
+
+            <!-- Dashboard Welcome Header (Flexbox) -->
+            <section class="dashboard-header" aria-labelledby="dash-welcome">
+                <div class="dashboard-user-info">
+                    <div class="dashboard-avatar" aria-hidden="true">AP</div>
+                    <div>
+                        <h2 id="dash-welcome" style="margin-bottom: 0.15rem;">Welcome, Arjun Patel!</h2>
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center;">
+                            <span class="badge badge-primary">ID: STU2026-8941</span>
+                            <span class="badge badge-info">B.Tech Computer Science</span>
+                            <span class="badge badge-success">Semester 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    <a href="courses.html" class="btn btn-outline btn-sm">&#128218; Enrolled Courses</a>
+                    <a href="assignment.html" class="btn btn-primary btn-sm">&#128221; View Tasks</a>
+                </div>
+            </section>
+
+            <!-- Academic Summary Cards (CSS Grid) -->
+            <section style="margin-bottom: var(--space-8);" aria-labelledby="summary-heading">
+                <div class="section-title-wrap">
+                    <p class="section-subtitle">Semester Snapshot</p>
+                    <h3 id="summary-heading" style="font-size: var(--font-size-xl);">Academic Summary</h3>
+                </div>
+
+                <div class="grid-stats">
+                    <div class="stat-card" style="border-top: 4px solid var(--color-primary);">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Enrolled Courses</span>
+                        <span class="badge badge-primary" style="margin-top: 0.5rem;">All Active</span>
+                    </div>
+
+                    <div class="stat-card" style="border-top: 4px solid var(--color-warning);">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Pending Assignments</span>
+                        <span class="badge badge-warning" style="margin-top: 0.5rem;">Due This Week</span>
+                    </div>
+
+                    <div class="stat-card" style="border-top: 4px solid var(--color-success);">
+                        <span class="stat-number">92%</span>
+                        <span class="stat-label">Attendance Rate</span>
+                        <span class="badge badge-success" style="margin-top: 0.5rem;">Good Standing</span>
+                    </div>
+
+                    <div class="stat-card" style="border-top: 4px solid var(--color-secondary);">
+                        <span class="stat-number">8.5</span>
+                        <span class="stat-label">Cumulative CGPA</span>
+                        <span class="badge badge-secondary" style="margin-top: 0.5rem;">First Class with Dist.</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard 2-Column Responsive Layout using CSS Grid -->
+            <div class="dashboard-layout">
+                
+                <!-- Left Main Column: Deadlines Table -->
+                <section class="card" aria-labelledby="deadlines-heading">
+                    <div class="card-header">
+                        <div>
+                            <span class="badge badge-warning" style="margin-bottom: 0.25rem;">Action Items</span>
+                            <h3 id="deadlines-heading" style="margin-bottom: 0;">Upcoming Deadlines</h3>
+                        </div>
+                        <a href="assignment.html" class="btn btn-sm btn-outline">All Assignments &rarr;</a>
+                    </div>
+
+                    <div class="card-body">
+                        <p style="font-size: var(--font-size-sm); margin-bottom: var(--space-4);">
+                            Prioritize and submit your coursework before the official portals lock.
+                        </p>
+
+                        <div class="table-responsive" style="margin-bottom: 0;">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Assignment</th>
+                                        <th scope="col">Course</th>
+                                        <th scope="col">Due Date</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Binary Search Tree Implementation</strong></td>
+                                        <td><span class="badge badge-info">CS301</span> DSA</td>
+                                        <td>2026-07-22</td>
+                                        <td><span class="badge badge-warning">Pending</span></td>
+                                        <td><a href="assignment.html" class="btn btn-sm btn-outline">Upload</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Responsive Portfolio Website</strong></td>
+                                        <td><span class="badge badge-info">CS302</span> Web Dev</td>
+                                        <td>2026-07-25</td>
+                                        <td><span class="badge badge-warning">Pending</span></td>
+                                        <td><a href="assignment.html" class="btn btn-sm btn-outline">Upload</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>ER Diagram for Library System</strong></td>
+                                        <td><span class="badge badge-info">CS303</span> DBMS</td>
+                                        <td>2026-07-28</td>
+                                        <td><span class="badge badge-warning">Pending</span></td>
+                                        <td><a href="assignment.html" class="btn btn-sm btn-outline">Upload</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Process Scheduling Simulation</strong></td>
+                                        <td><span class="badge badge-info">CS304</span> OS</td>
+                                        <td>2026-08-01</td>
+                                        <td><span class="badge badge-danger">Not Started</span></td>
+                                        <td><a href="assignment.html" class="btn btn-sm btn-outline">Start</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Right Sidebar Column: Quick Links & Alerts -->
+                <aside style="display: flex; flex-direction: column; gap: var(--space-6);" aria-labelledby="quicklinks-heading">
+                    
+                    <!-- Quick Navigation Card -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 id="quicklinks-heading" style="margin-bottom: 0; font-size: var(--font-size-md);">Quick Shortcuts</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="grid grid-cols-1" style="gap: var(--space-2);">
+                                <a href="courses.html" class="quick-link-item" style="padding: 0.65rem 0.85rem;">
+                                    <span>&#128218; Courses</span>
+                                    <span aria-hidden="true">&rarr;</span>
+                                </a>
+                                <a href="assignment.html" class="quick-link-item" style="padding: 0.65rem 0.85rem;">
+                                    <span>&#128221; Assignments</span>
+                                    <span aria-hidden="true">&rarr;</span>
+                                </a>
+                                <a href="attendance.html" class="quick-link-item" style="padding: 0.65rem 0.85rem;">
+                                    <span>&#9989; Attendance</span>
+                                    <span aria-hidden="true">&rarr;</span>
+                                </a>
+                                <a href="result.html" class="quick-link-item" style="padding: 0.65rem 0.85rem;">
+                                    <span>&#127942; Results</span>
+                                    <span aria-hidden="true">&rarr;</span>
+                                </a>
+                                <a href="events.html" class="quick-link-item" style="padding: 0.65rem 0.85rem;">
+                                    <span>&#128197; Events</span>
+                                    <span aria-hidden="true">&rarr;</span>
+                                </a>
+                                <a href="profile.html" class="quick-link-item" style="padding: 0.65rem 0.85rem;">
+                                    <span>&#128100; Profile</span>
+                                    <span aria-hidden="true">&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Campus Notices Card -->
+                    <div class="card" style="background-color: var(--color-primary-light); border-color: #bfdbfe;">
+                        <h4 style="color: var(--color-primary-dark); font-size: var(--font-size-md);">Campus Notice</h4>
+                        <p style="font-size: var(--font-size-sm); color: #1e3a8a; margin-bottom: var(--space-3);">
+                            Mid-term practical examinations begin on August 15th. Check course portals for lab venue allocations.
+                        </p>
+                        <a href="events.html" class="btn btn-sm btn-primary">Check Calendar &rarr;</a>
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Site Footer with Flexbox -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="brand">
+                    <span class="brand-icon" style="filter: brightness(1.2);">&#127891;</span>
+                    <div class="brand-text">
+                        <h2 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0;">StudentHub</h2>
+                        <p style="color: #94a3b8; font-size: 0.75rem;">Student Academic Portal</p>
+                    </div>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StudentHub. All rights reserved.</p>
+                <p>Designed with mobile-first CSS Grid &amp; Flexbox for accessibility and performance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
